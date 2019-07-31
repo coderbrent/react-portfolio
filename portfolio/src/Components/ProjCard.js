@@ -17,11 +17,11 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     card: {
-      maxWidth: 300,
+      maxWidth: 250,
       margin: 30,
     },
     media: {
-      height: 140,
+      height: 150,
     },
     iconHover: {
       margin: 2,
@@ -45,8 +45,8 @@ const useStyles = makeStyles({
         <CardActionArea>
           <CardMedia image={props.img} 
           style={{ 
-              minHeight: 125, 
-              minWidth: 130, 
+              minHeight: 150,
+              minWidth: 150, 
               borderBottom: '1px solid lightgrey' 
               }} />
           <CardContent>

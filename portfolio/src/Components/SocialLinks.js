@@ -12,10 +12,10 @@ class SocialLinks extends Component {
             <a href="https://www.github.com/coderbrent"><img width="35px" src="/github.svg"/></a>
           </Grid>
           <Grid item sm={1}>
-            <a href="mailto:brent.abruzese@gmail.com"><img width="30px" src="/envelope-solid.svg"/></a>
+            <a href="mailto:brent.abruzese@gmail.com"><img width="35px" src="/envelope-solid.svg"/></a>
           </Grid>
           <Grid item sm={1}>
-            <a href="https://www.linkedin.com/in/brent-abruzese"><img width="30px" src="/linkedin-in-brands.svg"/></a>
+            <a href="https://www.linkedin.com/in/brent-abruzese"><img width="35px" src="/linkedin-in-brands.svg"/></a>
           </Grid>
         </Grid>
       </Box>

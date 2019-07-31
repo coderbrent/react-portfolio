@@ -6,6 +6,7 @@ import { Link, Route, Redirect } from 'react-router-dom'
 import SocialLinks from '../Components/SocialLinks'
 import projects from '../data/projects.json';
 import ProjCard from '../Components/ProjCard';
+import { textAlign } from '@material-ui/system';
 
 class Portfolio extends Component {
 constructor(props) {
@@ -20,13 +21,21 @@ constructor(props) {
     return (
       <>
       <Container fluid maxWidth="md" style={{ marginTop: 85}}>
-        <Typography variant="h2" style={{ 
+      <Typography variant="h3" style={{ 
           fontWeight: 'bolder',
-          marginBottom: 40, 
-          color: 'darkblue'}}>
-          Portfolio
+          marginBottom: 15, 
+          color: 'darkslateblue',
+          textAlign: 'center'
+          }}>
+          My Portfolio
           </Typography>
-          <Grid container spacing={1} direction="row" alignContent="flex-start" justify="flex-start" > 
+          <Typography variant="h6" color="primary" style={{ textAlign: 'center' }}>
+            "Here's a nice piece of shit!"
+          </Typography>
+          <Typography variant="body2" color="textSecondary" style={{ textAlign: 'center' }}>
+            Boy oh boy, I hope that's not what you think when you look at my folio!!
+          </Typography>
+          <Grid container spacing={1} direction="row" alignContent="flex-start" justify="center" >
             {this.state.projects.map(Project => {
               return <ProjCard
                 key={Project.id}
