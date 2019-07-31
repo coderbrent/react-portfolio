@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "proj_name": "Chrono Cards",
+    "img": "/cronocard.png",
+    "description": "A React based browser game. I grew up playing Chrono Trigger so it was a lot of fun to tinker with React and some of my all time favorite game sprites!",
+    "links": {
+      "github": "coderbrent.github.io/react-game",
+      "heroku": "https://react-game.herokuapp.com"
+    }
+  },
+  {
+    "id": "2",
+    "proj_name": "My Little Pony",
+    "img": "/cronocard.png",
+    "description": "A React based browser game. I grew up playing Chrono Trigger so it was a lot of fun to tinker with React and some of my all time favorite game sprites!",
+    "links": {
+      "github": "coderbrent.github.io/react-game",
+      "heroku": "https://react-game.herokuapp.com"
+    }
+  }
+]

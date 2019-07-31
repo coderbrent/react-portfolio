@@ -5,29 +5,62 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import Landing from '../Screens/Landing'
+import Box from '@material-ui/core/Box';
 import About from '../Screens/About'
+import Portfolio from '../Screens/Portfolio';
+import Landing from '../Screens/Landing'
+import { red } from '@material-ui/core/colors';
 
-function TabContainer(props) {
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
   return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
-      {props.children}
+    <Typography
+      component="div"
+      role="tabpanel"
+      hidden={value !== index}
+      id={`nav-tabpanel-${index}`}
+      aria-labelledby={`nav-tab-${index}`}
+      {...other}
+    >
+      <Box p={3}>{children}</Box>
     </Typography>
   );
 }
 
-TabContainer.propTypes = {
-  children: PropTypes.node.isRequired,
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
 };
+
+function a11yProps(index) {
+  return {
+    id: `nav-tab-${index}`,
+    'aria-controls': `nav-tabpanel-${index}`,
+  };
+}
+
+function LinkTab(props) {
+  return (
+    <Tab
+      component="a"
+      onClick={event => {
+        event.preventDefault();
+      }}
+      {...props}
+    />
+  );
+}
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.paper
   },
 }));
 
-export default function SimpleTabs() {
+export default function NavTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -38,15 +71,26 @@ export default function SimpleTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange}>
-          <Tab label="Home" />
-          <Tab label="About" />
-          <Tab label="Portfolio" />
+        <Tabs
+          variant="fullWidth"
+          value={value}
+          onChange={handleChange}
+          aria-label="nav tabs example"
+        >
+          <LinkTab label="Home" href="/landing" {...a11yProps(0)} />
+          <LinkTab label="About" href="/about" {...a11yProps(1)} />
+          <LinkTab label="Portfolio" href="/portfolio" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
-      {value === 0 && <TabContainer>Item One</TabContainer>}
-      {value === 1 && <TabContainer>Item Two</TabContainer>}
-      {value === 2 && <TabContainer>Item Three</TabContainer>}
+      <TabPanel value={value} index={0}>
+        <Landing />
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <About />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <Portfolio />
+      </TabPanel>
     </div>
   );
 }

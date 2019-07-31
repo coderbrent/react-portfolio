@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 import { Grid, Box, Container, Typography, CssBaseline } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
-import { BrowserRouter as Router } from 'react-router-dom'
-import { Link, Route, Redirect } from 'react-router-dom'
-import { sizing } from '@material-ui/system';
 
 class Landing extends Component {
   render() {
@@ -11,7 +7,8 @@ class Landing extends Component {
       <>
         <Container 
         maxWidth="xs"
-        style={{ marginTop: 200}}
+        style={{ marginTop: 200 }}
+
         >
           <Grid
             container spacing={2}
@@ -20,14 +17,14 @@ class Landing extends Component {
             direction="row"
           >
           <Grid item xs={1.75}>
-            <img alt="node" 
-              src="nodejs-icon.svg"
+            <img alt="node"
+              src="/nodejs-icon.svg"
               width="50"
             />
           </Grid>
           <Grid item xs={1.75}>
             <img alt="express" 
-              src="express.svg"
+              src="/express.svg"
               width="50"
             />
           </Grid>
@@ -40,28 +37,30 @@ class Landing extends Component {
           </Grid>
           <Grid item xs={1.75}>
             <img alt="react" 
-              src="react.svg"
+              src="/react.svg"
               width="50"
             />
           </Grid>
           <Grid item xs={1.75}>
             <img alt="mongo" 
-              src="mongo.svg"
+              src="/mongo.svg"
               width="50"
             />
           </Grid>
-            <Box style={{ textAlign: "center"}} >
+          <Container>
+            <Box style={{ textAlign: "center" }} >
               <Typography
-                variant='body2'
-                component="body">
-                Brent Abruzese - Web Developer
+                variant='h6'
+                component="h6">
+                Brent Abruzese
               </Typography>
               <Typography 
-              variant="caption"
+              variant="body2"
               color="textSecondary">
-                Mongo, Express, React, Node
+                MERN Developer
               </Typography>
             </Box>
+            </Container>
           </Grid>
         </Container>
       </>

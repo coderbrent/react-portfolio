@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import Landing from './Screens/Landing'
-import SimpleTabs from './Components/Navigation';
+import NavTabs from './Components/Navigation';
 
 class App extends Component {
   render() {
     return(
       <>
-      <Landing />
+      <NavTabs />
       </>
     )
   }
