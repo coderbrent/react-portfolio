@@ -11,9 +11,10 @@
   },
   {
     "id": "2",
-    "proj_name": "My Little Pony",
-    "img": "/cronocard.png",
-    "description": "A React based browser game. I grew up playing Chrono Trigger so it was a lot of fun to tinker with React and some of my all time favorite game sprites!",
+    "proj_name": "The Legend of Brent",
+    "img": "/LoB.png",
+    "group": "true",
+    "description": "Another React based browser game! We",
     "links": {
       "github": "coderbrent.github.io/react-game",
       "heroku": "https://react-game.herokuapp.com"

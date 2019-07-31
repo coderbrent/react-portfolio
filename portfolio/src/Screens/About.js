@@ -24,18 +24,27 @@ class About extends Component {
         A Little Bit About Me...
         </Typography>
           <Box>
-            <Typography variant="body2" color="textSecondary" component="p">
-            <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: 10}}>First off - I F*#@ing Love Coding.</Typography>
+            <Typography variant="body2" color="textSecondary" paragraph="true" component="p" gutterBottom="true">
+            <Typography variant="h6" gutterBottom="true" style={{ fontWeight: 'bold' }}>First Off - I F*#@ing Love The Web.</Typography>
             I've spent the better part of my life with a deep love for technology. My first experience with a computer (and I'm going to
-            really date myself here) was attempting to fix a broken Tandy 2000. My grandmother brought it home from work one day for some reason and I was
-            obsessed with trying to figure out how to turn it on. I was around 6 at the time, but I knew what it was capable of (they'd just built a computer room at my elementary school full of
-            Tandys). I wanted to get it running to use LOGO and draw with that turtle! Tinkering with the Tandy turned into a full time obsession when
-            when AOL rolled around. I spent pretty much all of my free time reading up on Visual Basic so I could build a rock solid warez mass mailer
-            and wreak havok in the chatrooms like my hero CooLziE. But as much as I enjoyed the glow of the screen, as time went on, I began to veer away from computers. Around 2001, I wasn't really into
-            spending time on my PC anymore. I was getting close to graduating high school and I had to decide what to do with myself. I wasn't the greatest student, so college
-            wasn't attractive to me. I spent the following years bouncing around retail jobs. In 2005, my Dad passed away and I had to work full time at that point to help out the family, so education took a back seat.
-
-            
+            really date myself here) was attempting to fix a broken Tandy 2000. My grandmother had brought it home from work one day for some reason and I was
+            obsessed with trying to figure out how to turn it on. I was around 6 at the time, but I knew what it was capable of (they'd just built a computer room 
+            at my elementary school full of Tandys). I wanted to get it running to use LOGO and draw with that turtle! I never did fix the Tandy, but that got me
+            hooked on computers. My teen years I spent on dialup AOL "hacking" (AKA building progs and punters with Visual Basic). My love for computers was always only a hobby,
+            however. As I grew up, I began working for my family's cab company. In the back of my mind, everything we did I felt like we could be doing better with
+            the right software. On 03/20/2012, after finally getting fed up with the stagnation where I was, I started a Limo service called "Black Rock Limo".
+            I envisioned a small personable car service with a heavy lean on tech. Uber already existed, but I believed I could still survive if I offered similar conveniences with
+            a small business approach. That strategy led me from a start up with one car and one employee (myself), to a business that four years later would crack $1 million in
+            revenue with 22 employees and 10 vehicles.
+            <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: 10}}>Success In Business</Typography>
+            <Typography variant="body2" color="textSecondary" component="p" style={{ marginTop: 10}}>
+            While I've had some success in business, I did not want to rest on my laurels. Looking forward, I knew that autonomous vehicles were coming faster down the pipeline. The
+            driverless car movement is essentially one of the four horsemen for my industry. So I decided to enroll in a "Code Bootcamp" at Rutgers to learn to code. I figured, worst case,
+            I could build some sweet software for myself to set my business further apart from the pack. After enrolling I knew I was where I was supposed to be. The vibe from everyone
+            was contagious. This was a group of people eager to learn, innovate and create new things. I started to envision myself in the tech industry working with teams of
+            other passionate individuals like this. Halfway through the course, I decided to alter my path. I wanted to be apart of this movement full time. I took on a partner with my business
+            and assumed a silent role. As I write this, I'm three days away from graduating with a certificate of completion and I couldn't be more excited to pursue a career in this field!
+            </Typography>
             </Typography>
             {/* <SocialLinks /> */}
         </Box>
