@@ -14,21 +14,18 @@ import Typography from '@material-ui/core/Typography';
 import { __values } from 'tslib';
 import Icon from '@material-ui/core/Icon';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import GitHubButton from 'react-github-btn'
 
 const useStyles = makeStyles({
     card: {
-      maxWidth: 250,
+      // maxHeight: 'auto',
+      maxWidth: 'auto',
       margin: 30,
     },
     media: {
-      height: 150,
-    },
-    iconHover: {
-      margin: 2,
-      '&:hover': {
-        color: red[800],
-      }
-  }})
+      maxHeight: 100
+    }
+  })
 
   export default function ProjCard(props) {
     const classes = useStyles();
@@ -50,25 +47,18 @@ const useStyles = makeStyles({
               borderBottom: '1px solid lightgrey' 
               }} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2" style={{fontWeight: 'bold', color: '#555'}}>
+            <Typography gutterBottom variant="h5" component="h5" style={{fontWeight: 'bold', color: 'darkblue'}}>
             {props.name}
             {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
              {props.desc}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              <Router><Link to={props.links}>GitHub</Link></Router>
-            </Typography>
           </CardContent>
         </CardActionArea>
           <Grid>
-        <CardActions>
-          <Icon className={clsx(classes.iconHover, 'fab fa-github-square')}>
-          </Icon>
-          <Button size="small" color="primary">
-              Share
-          </Button>
+        <CardActions style={{ maxHeight: 50 }}>
+          <GitHubButton href={props.github} data-icon="octicon-repo-forked" aria-label="Fork ntkme/github-buttons on GitHub">Fork</GitHubButton>
         </CardActions>
           </Grid>
       </Card>

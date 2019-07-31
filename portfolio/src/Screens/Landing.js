@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Grid, Box, Container, Typography, CssBaseline } from '@material-ui/core' 
+import { Grid, Box, Container, Typography, CssBaseline } from '@material-ui/core'
+import GitHubButton from 'react-github-btn'
 
 class Landing extends Component {
   render() {
@@ -52,17 +53,25 @@ class Landing extends Component {
           <Container>
             <Box style={{ textAlign: "center" }} >
               <Typography
-                variant='h6'
-                component="h6"
+                variant='h5'
+                component="h5"
                 style={{ color: '#555'}}
                 >
                 I'm Brent Abruzese!
               </Typography>
               <Typography 
               variant="body2"
-              color="textSecondary">
+              color="textSecondary"
+              gutterBottom="true">
                 I'm a Software Engineer Focused in the MERN Stack.
               </Typography>
+              <GitHubButton
+                href="https://github.com/coderbrent" 
+                data-size="large" 
+                data-show-count="false"
+                aria-label="Follow @coderbrent on GitHub">
+                Follow @coderbrent
+              </GitHubButton>
             </Box>
             </Container>
           </Grid>

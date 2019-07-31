@@ -4,20 +4,16 @@
     "proj_name": "Chrono Cards",
     "img": "/cronocard.png",
     "description": "A React based browser game. I grew up playing Chrono Trigger so it was a lot of fun to tinker with React and some of my all time favorite game sprites!",
-    "links": {
-      "github": "coderbrent.github.io/react-game",
-      "heroku": "https://react-game.herokuapp.com"
-    }
+    "github": "coderbrent.github.io/react-game",
+    "heroku": "https://react-game.herokuapp.com"
   },
   {
     "id": "2",
-    "proj_name": "The Legend of Brent",
+    "proj_name": "Legend of Brent",
     "img": "/LoB.png",
     "group": "true",
-    "description": "Another React based browser game! We",
-    "links": {
-      "github": "coderbrent.github.io/react-game",
-      "heroku": "https://react-game.herokuapp.com"
-    }
+    "description": "Yet another React based browser game! To be clear: I'm not that egotistical - my team came up with the name!!! Lol. We wanted to try our hand at developing something with a little more in the way of game logic and dynamics (also had some pretty artwork in this one).",
+    "github": "https://github.com/somramnani/The-Legend-of-Brent",
+    "heroku": "https://react-game.herokuapp.com"
   }
 ]
