@@ -51,10 +51,7 @@ class About extends Component {
             other passionate individuals like this. Halfway through the course, I decided to alter my path. I wanted to be apart of this movement full time. I took on a partner with my business
             and assumed a silent role. As I write this, I'm three days away from graduating with a certificate of completion and I couldn't be more excited to pursue a career in this field!
             </Typography>
-            </Container>
-
-            <img href="/nu.jpg" />
-            
+            </Container>            
         </Box>
       </Container>
     </>
