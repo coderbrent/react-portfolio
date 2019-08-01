@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Link, Route, Redirect } from 'react-router-dom'
 import SocialLinks from '../Components/SocialLinks'
-import nu from '../public/nu.jpg'
 
 class About extends Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class About extends Component {
     const name = 'Brent Abruzese'
     return (
       <>
-      <Container maxWidth="lg" style={{ marginTop: 85, textAlign: "flex-start"}}>
+      <Container maxWidth="md" style={{ marginTop: 85, textAlign: "flex-start"}}>
         <Typography variant="h3" 
         style={{ 
           fontWeight: 'bolder', 
