@@ -9,7 +9,6 @@ import Box from '@material-ui/core/Box';
 import About from '../Screens/About'
 import Portfolio from '../Screens/Portfolio';
 import Landing from '../Screens/Landing'
-import { red } from '@material-ui/core/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -75,7 +74,7 @@ export default function NavTabs() {
           variant="fullWidth"
           value={value}
           onChange={handleChange}
-          aria-label="nav tabs example"
+          aria-label="nav tabs"
         >
           <LinkTab label="Home" href="/landing" {...a11yProps(0)} />
           <LinkTab label="About" href="/about" {...a11yProps(1)} />
