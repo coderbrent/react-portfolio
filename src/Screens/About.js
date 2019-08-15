@@ -20,7 +20,7 @@ class About extends Component {
           }}>
         A Little Bit About Me...
         </Typography>
-        <Typography variant="h5" gutterBottom="true" color="textPrimary" style={{ fontWeight: 'bold' }}>Where I've Been...</Typography>
+        <Typography variant="h5" gutterBottom="true" color="textSecondary" style={{ fontWeight: 'bold' }}>Where I've Been...</Typography>
           <Typography variant="body2" color="textSecondary" paragraph="true" component="p" gutterBottom="true" style={{marginBottom: 40}}>
             I've spent the better part of my life with a deep love for technology. My first experience with a computer (and I'm going to
             really date myself here) was attempting to fix a broken Tandy 2000. My grandmother had brought it home from work one day for some reason and I was
@@ -34,8 +34,8 @@ class About extends Component {
             revenue with 22 employees and 10 vehicles.
           </Typography>
           <Grid container spacing={5}>
-            <Grid container item sm={7}>
-              <Typography variant="h5" gutterBottom="false" color="textPrimary" style={{ fontWeight: 'bold' }}>...Where I Want To Go.</Typography>
+            <Grid container item sm={6}>
+              <Typography variant="h5" gutterBottom="false" color="textSecondary" style={{ fontWeight: 'bold' }}>...Where I Want To Go.</Typography>
               <Typography variant="body2" color="textSecondary" component="p" style={{ marginTop: 10}}>
                 While I've had some success in business, I did not want to rest on my laurels. Looking forward, it's clear that autonomous vehicles are coming faster down the pipeline. The
                 driverless car movement is essentially one of the four horsemen for my industry. So I decided to enroll in a "Code Bootcamp" at Rutgers to learn to code. I figured, worst case,
@@ -45,7 +45,7 @@ class About extends Component {
                 and assumed a silent role.
               </Typography>
             </Grid>
-            <Grid item sm={5}>
+            <Grid item xl={5}>
               <BrentPic />
             </Grid>
           </Grid>
